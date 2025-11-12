@@ -1,0 +1,56 @@
+2025-11-12 14:52:48,642 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-11-12 14:52:48,664 INFO o.a.j.JMeter: Loading user properties from: C:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2025-11-12 14:52:48,665 INFO o.a.j.JMeter: Loading system properties from: C:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2025-11-12 14:52:48,679 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-11-12 14:52:48,679 INFO o.a.j.JMeter: Version 5.6.3
+2025-11-12 14:52:48,679 INFO o.a.j.JMeter: java.version=25.0.1
+2025-11-12 14:52:48,680 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-11-12 14:52:48,680 INFO o.a.j.JMeter: os.name=Windows 11
+2025-11-12 14:52:48,680 INFO o.a.j.JMeter: os.arch=amd64
+2025-11-12 14:52:48,683 INFO o.a.j.JMeter: os.version=10.0
+2025-11-12 14:52:48,683 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-11-12 14:52:48,683 INFO o.a.j.JMeter: java.awt.headless=true
+2025-11-12 14:52:48,683 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-11-12 14:52:48,683 INFO o.a.j.JMeter: Available Processors =4
+2025-11-12 14:52:48,703 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-11-12 14:52:48,703 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-11-12 14:52:48,703 INFO o.a.j.JMeter: JMeterHome=C:\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2025-11-12 14:52:48,703 INFO o.a.j.JMeter: user.dir  =C:\JMeter-Projects\JSONPlaceholder-JMeter-Test
+2025-11-12 14:52:48,704 INFO o.a.j.JMeter: PWD       =C:\JMeter-Projects\JSONPlaceholder-JMeter-Test
+2025-11-12 14:52:48,707 INFO o.a.j.JMeter: IP: 192.168.0.104 Name: DESKTOP-OPO8U1K FullName: DESKTOP-OPO8U1K
+2025-11-12 14:52:48,720 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\JMeter-Projects\JSONPlaceholder-JMeter-Test\HTMLReport'
+2025-11-12 14:52:48,723 INFO o.a.j.s.FileServer: Default base='C:\JMeter-Projects\JSONPlaceholder-JMeter-Test'
+2025-11-12 14:52:48,724 INFO o.a.j.s.FileServer: Set new base='C:\JMeter-Projects\JSONPlaceholder-JMeter-Test'
+2025-11-12 14:52:49,052 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-12 14:52:49,076 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-12 14:52:49,080 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-12 14:52:49,084 INFO o.a.j.s.SaveService: Loading file: C:\JMeter-Projects\JSONPlaceholder-JMeter-Test\Stress_Test_Plan.jmx
+2025-11-12 14:52:49,132 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-12 14:52:49,132 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-12 14:52:49,132 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-12 14:52:49,133 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-12 14:52:49,133 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-12 14:52:49,133 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-12 14:52:49,172 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-11-12 14:52:49,176 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-11-12 14:52:49,177 ERROR o.a.j.JMeter: Error in NonGUIDriver
+java.lang.IllegalArgumentException: Results file:C:/JMeter-Projects/JSONPlaceholder-JMeter-Test/results.jtl is not empty
+	at org.apache.jmeter.report.dashboard.ReportGenerator.<init>(ReportGenerator.java:140) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:940) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:508) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+2025-11-12 14:52:49,191 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.config.ConfigurationException: Error in NonGUIDriver Results file:C:/JMeter-Projects/JSONPlaceholder-JMeter-Test/results.jtl is not empty
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1049) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:940) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:508) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+Caused by: java.lang.IllegalArgumentException: Results file:C:/JMeter-Projects/JSONPlaceholder-JMeter-Test/results.jtl is not empty
+	at org.apache.jmeter.report.dashboard.ReportGenerator.<init>(ReportGenerator.java:140) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1007) ~[ApacheJMeter_core.jar:5.6.3]
+	... 5 more
