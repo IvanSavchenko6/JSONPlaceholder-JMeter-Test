@@ -1,0 +1,53 @@
+# JSONPlaceholder API Test — Apache JMeter
+
+## Project Overview
+Цей проєкт містить тестовий план для перевірки основних HTTP методів (GET, POST, PUT, PATCH, DELETE) публічного REST API [JSONPlaceholder](https://jsonplaceholder.typicode.com).  
+Тест реалізовано у середовищі **Apache JMeter 5.6.3**.
+
+---
+
+## Test Purpose
+Мета тесту — перевірити працездатність ендпоінтів API, а також продемонструвати використання JMeter для функціонального тестування REST-запитів із застосуванням Assertions та Listener'ів.
+
+---
+
+## Test Configuration
+
+| Parameter | Value |
+|------------|--------|
+| Threads (Users) | 1 |
+| Loop Count | 3 |
+| Duration | 10 seconds |
+| Ramp-up Period | 0 |
+| Server | jsonplaceholder.typicode.com |
+| Protocol | HTTPS |
+
+---
+
+## Endpoints
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| GET | /posts/1 | Отримання даних поста |
+| POST | /posts | Створення нового поста |
+| PUT | /posts/1 | Повне оновлення поста |
+| PATCH | /posts/1 | Часткове оновлення поста |
+| DELETE | /posts/1 | Видалення поста |
+
+---
+
+## Assertions
+Кожен запит містить три перевірки:
+1. **Response Code** — перевірка статусу відповіді  
+2. **Response Body / JSON** — перевірка даних у тілі відповіді  
+3. **Response Time** або наявність ключових полів
+
+---
+
+## Listeners Used
+- **View Results Tree** — для перегляду відповідей сервера  
+- **Summary Report** — для узагальнення результатів тестування
+
+---
+
+## Files in Repository
